@@ -59,4 +59,4 @@ class Solution {
 ```
 
 TimeComplexity: O(n) \
-SpaceComplexity: O(1)
+SpaceComplexity: O(n)
