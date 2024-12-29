@@ -1,6 +1,6 @@
-Problem: Design a HashMap without using any built-in hash table libraries. \
+Problem: Design a HashMap without using any built-in hash table libraries.
 
-Implement the MyHashMap class: \
+Implement the MyHashMap class:
 
 MyHashMap() initializes the object with an empty map. \
 void put(int key, int value) inserts a (key, value) pair into the HashMap. If the key already exists in the map, update the corresponding value. \
@@ -30,7 +30,7 @@ myHashMap.get(2);    // return -1 (i.e., not found), The map is now [[1,1]] \
 Constraints: \
 
 0 <= key, value <= 106 \
-At most 104 calls will be made to put, get, and remove. \
+At most 104 calls will be made to put, get, and remove.
 
 Solution:
 ```
@@ -107,3 +107,6 @@ class MyHashMap {
     }
 }
 ```
+
+`TimeComplexity`: O(N/B), where N is the number of all possible keys and B is the number of buckets.\
+`SpaceComplexity`: O(M + N), where M is the given element size and N is the bucket size which is 10000 here.
